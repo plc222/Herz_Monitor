@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -101,15 +104,32 @@
             </form>
         </div>
     </section>
-    <section class="carusel">
+    <section class="carousel">
         <div class="container">
-            <div class="carusel__inner">
-                <img src="./img/slider/slider-1.jpg" alt="">
-                <img src="./img/slider/slider-2.jpg" alt="">
-                <img src="./img/slider/slider-3.jpg" alt="">
+            <div class="slide">
+                
+                <div class="carousel__inner">
+                    <div class="slider">
+                        <img src="./img/slider/slider-1.jpg" alt="">
+                    </div>
+                    <div class="slider">
+                        <img src="./img/slider/slider-2.jpg" alt="">
+                    </div>
+                    <div class="slider">
+                        <img src="./img/slider/slider-3.jpg" alt="">
+                    </div>
+                </div>
+             
             </div>
+           
         </div>
     </section>
+    <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: inline-block;">Next</button>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script  src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script  src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
