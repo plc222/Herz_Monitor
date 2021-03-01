@@ -20,7 +20,7 @@ gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
         .pipe(sass())
         .pipe(rename({suffix: '.min', prefix: ''}))
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
         .pipe(cleanCSS({ level: { 1: { specialComments: 0 } } , format: 'beautify'}))
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.stream());
