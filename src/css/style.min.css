@@ -364,74 +364,10 @@ body {
 .catalog__content_active {
   display: block
 }
-.catalog-item {
-  width: 29%;
-  min-height: 400px;
-  padding: 10px;
-  margin-bottom: 25px;
-  border: 2px solid #e8e8e8;
-  
-}
-.item__content img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  
-}
 .catalog-item hr {
   width: 80%;
   background-color: #e8e8e8;
   margin-bottom: 20px
-}
-.catalog-item__subtitle {
-  font-size: 21px;
-  font-weight: 700;
-  color: #0d0d0d;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  text-align: center;
-}
-.catalog-item__header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.catalog-item__descr {
-  font-size: 16px;
-  font-weight: 300;
-  color: #0d0d0d;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.catalog-item__link {
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #c70101;
-  cursor: pointer;
-  text-decoration: underline;
-  margin-left: 43px;
-  
-}
-.catalog-item__list {
-  display: none;
-  list-style-type: square;
-  font-size: 14px;
-  color: #0d0d0d;
-  line-height: 1.5;
-  font-weight: 300;
-  margin-bottom: 30px;
-  
-}
-.catalog-item__list-visible {
-  display: block;
-}
-.catalog-item__back {
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #c70101;
-  cursor: pointer;
-  text-decoration: underline;
 }
 .items__wrap {
   display: -webkit-box;
@@ -441,30 +377,83 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between
 }
-.item__footer {
+.catalog-item {
+  width: 29%;
+  min-height: 400px;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: 2px solid #e8e8e8
+}
+.catalog-item__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center
 }
-.item__prices {
+.catalog-item__prices {
   margin-right: 20px
 }
-.item__prices-old {
+.catalog-item__prices-old {
   font-size: 14px;
   color: #555;
   font-weight: 300;
   text-decoration: line-through
 }
-.item__prices-new {
+.catalog-item__prices-new {
   font-size: 20px;
   color: #0d0d0d;
   font-weight: 500
+}
+.catalog-item__subtitle {
+  font-size: 21px;
+  font-weight: 700;
+  color: #0d0d0d;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: center
+}
+.catalog-item__descr {
+  font-size: 16px;
+  font-weight: 300;
+  color: #0d0d0d;
+  margin-bottom: 10px
+}
+.catalog-item__link {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #c70101;
+  cursor: pointer;
+  margin-left: 40px
+}
+.catalog-item__back {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 14px;
+  color: #c70101;
+  cursor: pointer
+}
+.catalog-item__list {
+  display: none;
+  list-style-type: square;
+  font-size: 14px;
+  color: #0d0d0d;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 30px
+}
+.catalog-item__list-visible {
+  display: block
+}
+.item__content img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 180px
 }
 .button_mini {
   font-size: 12px;
@@ -477,4 +466,52 @@ body {
 }
 .button_mini:hover {
   background: #dc0e0e
+}
+.reviews {
+  padding-top: 90px;
+  padding-bottom: 90px
+}
+.reviews-item {
+  width: 95%
+}
+.feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 40px
+}
+.feed__title {
+  color: #0d0d0d;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 10px
+}
+.feed__subtitle {
+  color: #646464;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 15px
+}
+.feed__descr {
+  color: #0d0d0d;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.3
+}
+.feed__img {
+  width: 25%
+}
+.feed__content {
+  width: 90%
 }
