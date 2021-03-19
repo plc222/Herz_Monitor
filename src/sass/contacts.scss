@@ -1,0 +1,42 @@
+
+
+.contacts {
+  position: relative;
+}
+  
+
+.contact {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  background-color: #c70101;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  &__addr {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+  }
+  &__phone {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-item {
+      width: 40px;
+      margin-right: 30px;
+    }
+  }
+}
+  
