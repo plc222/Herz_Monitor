@@ -38,39 +38,11 @@ btnPrev.forEach((el) => {
 
 /* Модальные окна*/
 
-const btnConsult = document.getElementById('btnConsult');// Кнопка заказа консультации
-const btnBuzzer = document.getElementById('buzzer');// Кнопка заказа звонка
-const modComsult = document.getElementById('consultation');// Мод.окно консультации
-const modOrder = document.getElementById('order');// Мод.окно покупки
-const closeModal = document.getElementById('closeModal'); // Кнопка закрытия
-const overlay = document.getElementById('overlay'); //затемнение экрана
-const btnShop = document.querySelectorAll('.button_mini')// Кнопка купить
+$('[.data-modal = consultation]').on('click', function(){
+  $('.overlay, #consultation').fadeIn('slow');
+});
 
 
-/* Открытие модального окна */
-btnConsult.onclick = function () {
-  overlay.style.display = "block";
-  modComsult.style.display = "block";
-}
-
-btnBuzzer.onclick = function () {
-  overlay.style.display = "block";
-  modComsult.style.display = "block";
-}
-
-  /* Закрытие модального окна */
-closeModal.onclick = function () {
-  overlay.style.display = "none";
-  modComsult.style.display = "none";
-}
-
-/* Модальное окно покупки */
-btnShop.onclick = function () {
-  console.log(btnShop);
-  overlay.style.display = "none";
-  modOrder.style.display = "none";
-
-}
 
 
 
