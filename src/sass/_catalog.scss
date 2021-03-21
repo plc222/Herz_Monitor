@@ -125,6 +125,11 @@
   &__list-visible {
     display: block;
   }
+  &__contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
  
 }
 .item__content img {
