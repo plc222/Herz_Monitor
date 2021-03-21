@@ -52,16 +52,27 @@ btnConsult.onclick = function () {
   overlay.style.display = "block";
   modComsult.style.display = "block";
 }
+
+btnBuzzer.onclick = function () {
+  overlay.style.display = "block";
+  modComsult.style.display = "block";
+}
+
   /* Закрытие модального окна */
 closeModal.onclick = function () {
   overlay.style.display = "none";
   modComsult.style.display = "none";
 }
 
-btnBuzzer.onclick = function () {
-  overlay.style.display = "block";
-  modComsult.style.display = "block";
+/* Модальное окно покупки */
+btnShop.onclick = function () {
+  console.log(btnShop);
+  overlay.style.display = "none";
+  modOrder.style.display = "none";
+
 }
+
+
 
 
 
